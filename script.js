@@ -1,8 +1,13 @@
 'use strict'
+function namef()
 
-let name1 = prompt('Say hi to Duke enter your name!');
+{let name1 = prompt('Say hi to Duke enter your name!');
+return 'Hello '+ name1;
 
-let banana = prompt('what time is it?(24 hr)');
+}
+
+function time()
+{let banana = prompt('what time is it?(24 hr)');
 
 let message;
 
@@ -17,21 +22,31 @@ else if(banana <= 1800){
 else if(banana <= 2400){
     message = 'Good evening!';
 }
-else{
+else
     message= 'That time does not exist!';
+return message;
 }
 
-let guess = prompt('Guess how old Duke is!');
+
+function ageguess(){
+ let guess = prompt ('Guess how old Duke is!');
+
 let message1;
-if (guess < 10){
-    message1 = 'Too low!'}
-else if(guess> 11){
-    message1 = 'Too high'}
-else if(guess = 11){
-    message1 = 'you got it!'
+
+if(guess <= 10){
+
+    message1 = 'Too low!';
+}
+
+else if(guess > 11){
+
+    message1 = 'Too high';
+}
+
+else if(guess == 11){
+
+    message1 = 'you got it!';}
+
+return message1;
 
 }
-document.write('Hi, ' + name1 + message + message1)
-
-
-    
